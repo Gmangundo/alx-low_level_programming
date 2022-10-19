@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main -entry
+ * main - print _putchar
  *is written by gman
  * Return: always (0)
  */
