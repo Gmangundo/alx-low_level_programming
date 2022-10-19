@@ -10,6 +10,9 @@
 
 int print_sign(int n)
 {
+	int n;
+
+	n = print_sign;
 
 	if (n > 0)
 	{
