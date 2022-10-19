@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10(void) - Write print 10 times the alphabet, in lowercase
+ * print_alphabet_x10 - Write print 10 times the alphabet, in lowercase
  */
 
 void print_alphabet_x10(void)
 {
-	int list = 0
+	int list = 0;
 	char word;
 
 	while (list++ <= 9)
@@ -15,4 +15,3 @@ void print_alphabet_x10(void)
 			_putchar(word);
 		_putchar('\n');
 	}
-}
