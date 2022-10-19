@@ -6,12 +6,13 @@
 
 void print_alphabet_x10(void)
 {
-	int list = 0;
+	int count = 0;
 	char word;
 
-	while (list++ <= 9)
+	while (count++ <= 9)
 	{
 		for (word = 'a'; word <= 'z'; word++)
 			_putchar(word);
-		_putchar('/n');
+		_putchar('\n');
 	}
+}
