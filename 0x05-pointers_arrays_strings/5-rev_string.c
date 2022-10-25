@@ -12,8 +12,8 @@ void rev_string(char *s)
 	int p;
 
 	while (s[r] != '\0')
-		c++;
-	for (p = 0; i < c; p++)
+		r++;
+	for (p = 0; p < r; p++)
 	{
 		r--;
 		rv = s[p];
