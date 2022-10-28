@@ -5,13 +5,11 @@
  * @a: array of integers
  * @n: number of elements to swap
  * Return: rev
- * ?
  */
 void reverse_array(int *a, int n)
 {
 	int r;
 	int g;
-
 
 	for (r = 0; r < n; r++)
 	{
