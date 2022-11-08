@@ -1,17 +1,18 @@
-#include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
- * main - print the name of the program
- * @argc: Argument count
- * @argv: Argument vector
+ * main - print the multiplication of two integers
+ * @argc: argument count
+ * @argv: argument vector
  *
- * Return: 0 (success), 1 if false
+ * Return: 0 if true, 1 if false
  */
 
 int main(int argc, char *argv[])
 {
 	int a, b;
+
 	if (argc == 3)
 	{
 		a = atoi(argv[1]);
