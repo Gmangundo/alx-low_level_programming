@@ -1,25 +1,43 @@
-#include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - prints the multiplication of two integers
- * @argc: argument count
- * @argv: argument vector
- * Return: 0 if true, 1 if false
+ * alloc_grid -returns a pointer to a 2D array of ints
+ * @width: width
+ * @height: height
+ * Return: pointer to array
  */
-int main(int argc, char *argv[])
+int **alloc_grid(int width, int height)
 {
-	int a, b;
+	int freenum;
+	int x;
+	int y;
+	int i;
+	int **arr;
 
-if (argc == 3)
-{
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-	printf("%d\n", a * b);
-	return (0);
+	if (width < 1 || height < 1)
+		return (NULL);
+	arr = malloc(sizeof(int *) * height);
+	if (arr == NULL)
+		return (NULL);
+	for (i = 0; i < height; i++)
+	{
+		arr[i] = malloc(sizeof(int) * width);
+		if (arr[i] == NULL)
+		{
+			for (freenum = 0; freenum < i; freenum++)
+			{
+				free(arr[freenum]);
+			}
+			free(arr);
+			return (NULL);
+		}
+	}
+	for (x = 0; x < height; x++)
+	{
+		for (y = 0; y < width; y++)
+		{
+			rr[x][y] = 0;
+		}
+	}
+	return (arr);
 }
-printf("Error\n");
-return (1);
-}
-
