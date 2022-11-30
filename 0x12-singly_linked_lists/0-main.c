@@ -19,8 +19,8 @@ int main(void)
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 	{
-		printf("Error\n");
-		return (1);
+	printf("Error\n");
+	return (1);
 	}
 	new->str = strdup("Hello");
 	new->len = 5;
@@ -37,4 +37,4 @@ int main(void)
 
 	free(new);
 	return (0);
-}
+} 
